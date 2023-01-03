@@ -1,5 +1,8 @@
 # mypkg
+![test](https://github.com/MiyawakiKaito/mypkg/actions/workflows/test.yml/badge.svg)
 このリポジトリはロボットシステム学で使用したROS2のパッケージである。
+
+#トピックの説明
 
 # 実行方法
 
