@@ -14,11 +14,10 @@
 * listener
   * トピックを通じて受信したメッセージを表示する
 
-* メッセージの型は16ビットの符号つき整数である
 ### トピック
 * /countup
   * talkerからのメッセージをlistenerに送信する
-
+  * メッセージの型は16ビットの符号つき整数である
 ## 実行方法
 ```
 $ ros2 launch mypkg talk_listen.launch.py
