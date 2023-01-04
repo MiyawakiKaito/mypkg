@@ -1,5 +1,5 @@
 #!/bin/bash
-# SPDX-FileCopyrightText: 2022 Miyawaki Kaito
+# SPDX-FileCopyrightText: 2023 Miyawaki Kaito
 # SPDX-License-Identifier: BSD-3-Clause
 
 dir=~
