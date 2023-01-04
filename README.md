@@ -5,18 +5,31 @@
 このリポジトリはロボットシステム学で使用したROS2のパッケージである。
 
 ## パッケージの説明
-* パブリッシャ
-  * talker : 数字をカウントするノード
-* サブスクライバー
-  * 貰ったメッセージを表示するノード
+### ノード
+* talker
+  * パブリッシャを持ち、数字をカウントするノード
+* listener
+  * サブスクライバ―を持ち、トピックから受け取ったメッセージを表示するノード
+
 ### トピック
-  * /countup
-  * talkerから受け取ったメッセージをlistenerに渡す。
-  * メッセージの型 : 16ビットの符号つき整数
-
-
+* /countup
+  * talkerから受け取ったメッセージをlistenerに渡す。メッセージの型は16ビットの符号つき整数である。
 
 ## 実行方法
+```
+$ ros2 launch mypkg talk_listen.launch.py
+```
+### 結果
+```
+[listener-2] [INFO] [1672796251.072674100] [listener]: Listen: 0
+[listener-2] [INFO] [1672796251.559227600] [listener]: Listen: 1
+[listener-2] [INFO] [1672796252.059344800] [listener]: Listen: 2
+[listener-2] [INFO] [1672796252.559128000] [listener]: Listen: 3
+[listener-2] [INFO] [1672796253.058536900] [listener]: Listen: 4
+[listener-2] [INFO] [1672796253.558141700] [listener]: Listen: 5
+
+・・・
+```
 
 ## 必要なソフトウェア
 * ROS2
